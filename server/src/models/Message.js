@@ -19,4 +19,4 @@ const userSchema = new mongoose.Schema({
         required: true,
     },},{ timestamps: true });
     
-models.exports = mongoose.model("Message", userSchema);
+module.exports = mongoose.model("Message", userSchema);

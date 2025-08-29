@@ -37,3 +37,12 @@
     border: none;
     cursor: pointer;
 }
+
+.alien-img {
+    width: 160px;
+    height: 200px;        /* 👈 force equal height */
+    object-fit: cover;    /* 👈 crop nicely inside */
+    border-radius: 50%;   /* 👈 makes it circular */
+    margin-bottom: 1rem;
+    border: 2px solid green; /* optional: border for styling */
+}
