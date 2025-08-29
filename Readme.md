@@ -1,4 +1,4 @@
-# 💬 Realtime Chat Application  
+<h1 align="center"> Realtime Chat Application </h1>  
 
 A **Realtime Chat Application** built using **React (frontend)**, **Node.js + Express (backend)**, **MongoDB (database)**, and **Socket.io (realtime messaging)** with **JWT authentication**.  
 
