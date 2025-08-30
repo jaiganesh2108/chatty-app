@@ -113,3 +113,32 @@
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* Marquee container */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #2e7d32;   /* Dark green strip */
+  color: #fff;
+  padding: 6px 0;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* Moving text */
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 12s linear infinite;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

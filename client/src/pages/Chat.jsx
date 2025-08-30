@@ -35,6 +35,13 @@ function Chat({ user }) {
         <span>Welcome, {user.name}</span>
       </div>
 
+      {/* Marquee Row */}
+      <div className="marquee-container">
+        <div className="marquee">
+          🚀 Welcome to Alien Chat! Which helps you to easily communicate accross light-years! booyah...🚀
+        </div>
+      </div>
+
       <MessageList messageList={messages} currentUser={user.name} />
       <ChatInput onSent={sendMessage} />
     </div>
