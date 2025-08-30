@@ -81,7 +81,7 @@ chat-app/
 ├── server/           # Node.js backend
 │   ├── models/       # MongoDB Schemas
 │   ├── routes/       # API Routes
-│   ├── server.js     # Express + Socket.io
+│   ├── index.js     # Express + Socket.io
 │   └── package.json
 │
 └── README.md
