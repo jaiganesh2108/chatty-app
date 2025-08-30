@@ -10,7 +10,8 @@ A **Realtime Chat Application** built using **React (frontend)**, **Node.js + Ex
 - **MongoDB** for storing user & message data  
 - Separate **Sender** and **Receiver** message styles  
 - Responsive UI with **CSS Chat Bubbles**  
-- Secure login & protected routes  
+- Secure login & protected routes 
+- More responsive **marquee effect** infinite loop 
 
 ---
 
