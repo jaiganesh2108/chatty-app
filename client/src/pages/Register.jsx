@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import api from "../lib/api"; // 👈 Axios instance
+import api from "../lib/api"; 
 import "../styles/auth.css";
-import alienChat from "../assets/alien.png"; // 👈 Add your alien image in src/assets/
+import alienChat from "../assets/alien.png"; 
 
 function Register() {
   const [name, setName] = useState("");

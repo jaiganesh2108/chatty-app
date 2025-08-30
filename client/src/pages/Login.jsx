@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../lib/api";
 import "../styles/auth.css";
-import alienChat from "../assets/alien.png"; // 👈 Save your image in src/assets/alien.png
+import alienChat from "../assets/alien.png"; 
 
 function Login({ setUser }) {
     const [email, setEmail] = useState("");

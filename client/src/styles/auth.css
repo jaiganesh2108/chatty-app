@@ -9,9 +9,9 @@
 .auth-box {
     background: white;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
-    width: 300px;
+    width: 450px;
     text-align: center;
 }
 
@@ -40,9 +40,9 @@
 
 .alien-img {
     width: 160px;
-    height: 200px;        /* 👈 force equal height */
-    object-fit: cover;    /* 👈 crop nicely inside */
-    border-radius: 50%;   /* 👈 makes it circular */
+    height: 200px;        
+    object-fit: cover;    
+    border-radius: 50%;   
     margin-bottom: 1rem;
-    border: 2px solid green; /* optional: border for styling */
+    border: 2px solid green; 
 }

@@ -31,7 +31,7 @@
 
 .message-list {
   flex: 1;
-  max-height: none; /* take all space */
+  max-height: none; 
   overflow-y: auto;
   margin-bottom: 1rem;
   padding: 0.5rem;

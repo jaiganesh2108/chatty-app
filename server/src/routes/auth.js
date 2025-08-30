@@ -1,10 +1,11 @@
 const express = require("express");
 const bcrypt = require("bcryptjs"); 
 const jwt = require("jsonwebtoken");
-const User = require("../models/User");
+const newLocal = "../models/User";
+const User = require(newLocal);
 const router = express.Router();
 
-// ✅ Helper: sign token
+// Helper: sign token
 const signToken = (user) => {
   if (!process.env.JWT_SECRET) {
     throw new Error("❌ JWT_SECRET is not set in .env");
@@ -16,7 +17,7 @@ const signToken = (user) => {
   );
 };
 
-// ✅ POST /api/auth/register
+// POST /api/auth/register
 router.post("/register", async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -56,7 +57,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-// ✅ POST /api/auth/login
+// POST /api/auth/login
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -70,7 +71,7 @@ router.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
-    // ✅ compare against passwordHash
+    // compare against passwordHash
     const isMatch = await bcrypt.compare(password, user.passwordHash);
     if (!isMatch) {
       return res.status(401).json({ message: "Invalid credentials" });
@@ -95,12 +96,12 @@ router.post("/login", async (req, res) => {
   }
 });
 
-// ✅ POST /api/auth/logout
+// POST /api/auth/logout
 router.post("/logout", (_req, res) => {
   res.clearCookie("token").json({ message: "Logged out" });
 });
 
-// ✅ GET /api/auth/me
+// GET /api/auth/me
 router.get("/me", async (req, res) => {
   try {
     const hdr = req.header("Authorization");
