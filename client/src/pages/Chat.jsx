@@ -29,20 +29,26 @@ function Chat({ user }) {
 
   return (
     <div className="chat-container">
+      {/* Cosmic background bubbles */}
+      <div className="background-stars"></div>
+
       {/* Header */}
-      <div className="chat-header">
+      <div className="chat-header glass">
         <h2>👽 Alien Chat</h2>
         <span>Welcome, {user.name}</span>
       </div>
 
       {/* Marquee Row */}
-      <div className="marquee-container">
+      <div className="marquee-container glass">
         <div className="marquee">
-          🚀 Welcome to Alien Chat! Which helps you to easily communicate accross light-years! booyah...🚀
+          🚀 Welcome to Alien Chat! Communicate across light-years with style! 🌌
         </div>
       </div>
 
+      {/* Messages */}
       <MessageList messageList={messages} currentUser={user.name} />
+
+      {/* Input */}
       <ChatInput onSent={sendMessage} />
     </div>
   );
